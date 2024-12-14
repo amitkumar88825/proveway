@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <!-- Header -->
+        <header class="title-container">
+            <h1 class="title-text">YAY! It's BOGO</h1>
+        </header>
+
+        <!-- Offers Section -->
+        <section>
+            <!-- Option 1 -->
+            <article class="option" id="optionOne">
+                <input type="radio" name="offer" id="option1" onclick="changeBackground('optionOne')">
+                <label for="option1">
+                    <b>1 Unit</b> <span class="discount">10% Off</span><br />
+                    <span class="str-price">Standard Price</span>
+                </label>
+                <p class="price"><b>$10.00 USD</b> <br /><del>$24.00 USD</del></p>
+            </article>
+
+            <!-- Option 2 - Most Popular -->
+            <article class="optionBody" id="optionTwo">
+                <div class="most-popular-badge">MOST POPULAR</div>
+                <div class="optionTwo">
+                    <input type="radio" name="offer" id="option2" onclick="changeBackground('optionTwo')">
+                    <label for="option2">
+                        <b>2 Units</b> <span class="discount">20% Off</span>
+                    </label>
+                    <p class="price"><b>$18.00 USD</b> <br /><del>$24.00 USD</del></p>
+                </div>
+
+                <!-- Dropdowns for Option 2 -->
+                <div class="dropdowns">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Size</th>
+                                <th>Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1</td>
+                                <td>
+                                    <select>
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>Black</option>
+                                        <option>White</option>
+                                        <option>Red</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#2</td>
+                                <td>
+                                    <select>
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>Black</option>
+                                        <option>White</option>
+                                        <option>Red</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Option 3 -->
+            <article class="option" id="optionThree">
+                <input type="radio" name="offer" id="option3" onclick="changeBackground('optionThree')">
+                <label for="option3">
+                    <b>3 Units</b> <span class="discount">30% Off</span>
+                </label>
+                <p class="price"><b>$24.00 USD</b> <br /><del>$24.00 USD</del></p>
+            </article>
+        </section>
+
+        <!-- Delivery and Cart Info -->
+        <section class="delivery">
+            <p class="free-delivery">Free Delivery</p>
+            <p class="total">Total: $18.00 USD</p>
+        </section>
+        <section>
+            <button class="add-to-cart">+ Add to Cart</button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="powered-by">
+            <p>@ Powered by Pumper</p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="index.js"></script>
+    </main>
+</body>
+
+</html>
